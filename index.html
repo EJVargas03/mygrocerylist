@@ -11,6 +11,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>My Grocery List</h1>
+    <h1 class="title">My Grocery List</h1>
+    <form class="newGroceryForm">
+        <input id="newGrocery"
+            autocomplete="off"
+            type="text"
+            placeholder="Add an item to your list"
+        />
+        <button id="addBtn" type="submit">Add</button>
+    </form>
+    <ul id="groceryList">
+        <li class="groceryItem">Eggs</li>
+        <li class="groceryItem">Ham</li>
+        <li class="groceryItem">Milk</li>
+    </ul>
 </body>
 </html>
