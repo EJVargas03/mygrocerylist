@@ -9,8 +9,74 @@
     --greenish:	#c3e88d;
     --bluish:	#82aaff;
     --purplish:	#c792ea;
-};
+}
 
 body {
+    background-color: var(--background);
+    color: var(--foreground);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-family: 'Roboto Mono', monospace;
+}
+
+.title {
+    margin: 0.5em;
+    font-size: 3em;
+    font-weight: lighter;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+}
+
+.newGroceryForm{
+    display: flex;
+}
+
+#newGrocery {
+    background-color: white;
+    color: var(--comment);
+    padding: 0.5em;
+    width: 25em;
+    font-size: 1.5;
+    border-radius: 0.25em 0 0 0.25em ;
+}
+
+#addBtn{
+    background-color: var(--accent);
+    color: var(--background);
+    padding: 0.5em;
+    font-size: 1.5;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0 0.25em 0.25em 0;
+}
+
+#addBtn:hover {
+    background-color: var(--purplish);
+}
+
+#groceryList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+    border-radius: 0.5em;
+    background-color: var(--comment);
+}
+
+.groceryItem {
+    background-color: white;
+    color: var(--background);
+    margin: 0.5em;
+    width: 24em;
+    text-align: center;
+    padding: 0.5em;
+    border-radius: 0.25em;
+}
+
+.groceryItem:hover {
+   background-color: var(--accent);
+   font: bold; 
 }
