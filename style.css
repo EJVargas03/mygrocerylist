@@ -26,11 +26,31 @@ body {
     font-size: 3em;
     font-weight: lighter;
     letter-spacing: 0.05em;
-    color: var(--accent);
+    color: var(--purplish);
 }
 
 .newGroceryForm{
     display: flex;
+}
+
+.guide{
+    color: var(--comment);
+    margin-top: 1em;
+    font-size: 1.5em;
+}
+
+#guideList{
+    color: var(--comment);
+    margin-top: 1em;
+}
+
+.guideItem{
+    color: var(--comment);
+    margin: 0.5em;
+    width: 15em;
+    text-align: center;
+    padding: 0.2em;
+    border-radius: 0.25em;
 }
 
 #newGrocery {
@@ -43,7 +63,7 @@ body {
 }
 
 #addBtn{
-    background-color: var(--accent);
+    background-color: var(--purplish);
     color: var(--background);
     padding: 0.5em;
     font-size: 1.5;
@@ -53,7 +73,7 @@ body {
 }
 
 #addBtn:hover {
-    background-color: var(--purplish);
+    background-color: var(--bluish);
 }
 
 #groceryList {
